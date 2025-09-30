@@ -1,0 +1,28 @@
+{
+  "template": "https://github.com/FAIRmat-NFDI/cookiecutter-nomad-plugin",
+  "commit": "5f38479d519664f77a5ea3b7790efb31253b7cc9",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "full_name": "Matteo Bontorno",
+      "email": "mbontorno@fbk.it",
+      "github_username": "Trog-404",
+      "plugin_name": "Fabrication-utilities",
+      "module_name": "fabrication_utilities",
+      "short_description": "Plugin for fabrication processes",
+      "version": "1.13.0",
+      "license": "BSD-3",
+      "include_schema_package": true,
+      "include_normalizer": true,
+      "include_parser": true,
+      "include_app": true,
+      "include_example_uploads": false,
+      "_copy_without_render": [
+        "*.html"
+      ],
+      "_template": "https://github.com/FAIRmat-NFDI/cookiecutter-nomad-plugin",
+      "_commit": "5f38479d519664f77a5ea3b7790efb31253b7cc9"
+    }
+  },
+  "directory": null
+}
