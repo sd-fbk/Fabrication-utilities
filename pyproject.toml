@@ -11,7 +11,7 @@ classifiers = [
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
-    "License :: OSI Approved :: BSD License",
+    "License :: OSI Approved :: MIT License",
 ]
 name = "Fabrication-utilities"
 #suggested description, instead of "Plugin for fabrication processes"
@@ -24,6 +24,7 @@ authors = [
 ]
 maintainers = [
     { name = "Matteo Bontorno", email = "mbontorno@fbk.eu" },
+    { name = "Lorenza Ferrario", email = "ferrario@fbk.eu" },
 ]
 license = { file = "LICENSE" }
 dependencies = [
@@ -32,7 +33,7 @@ dependencies = [
 ]
 
 [project.urls]
-Repository = "https://github.com/Trog-404/Fabrication-utilities"
+Repository = "https://github.com/sd-fbk/Fabrication-utilities"
 
 [project.optional-dependencies]
 dev = ["ruff", "pytest", "structlog"]
