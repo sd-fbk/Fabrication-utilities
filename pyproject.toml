@@ -1,0 +1,170 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "setuptools-scm>=8.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: BSD License",
+]
+name = "Fabrication-utilities"
+#suggested description, instead of "Plugin for fabrication processes"
+description = "Plugin for nanofabrication semiconductor cleanroom processes"
+version = "2.0.0"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    { name = "Matteo Bontorno", email = "mbontorno@fbk.eu" },
+]
+maintainers = [
+    { name = "Matteo Bontorno", email = "mbontorno@fbk.eu" },
+]
+license = { file = "LICENSE" }
+dependencies = [
+    "nomad-lab>=1.3.0",
+    "python-magic-bin; sys_platform == 'win32'",
+]
+
+[project.urls]
+Repository = "https://github.com/Trog-404/Fabrication-utilities"
+
+[project.optional-dependencies]
+dev = ["ruff", "pytest", "structlog"]
+
+[tool.ruff]
+# Exclude a variety of ignored directories or files.
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+    "src/fabrication_utilities/apps/directories.py"
+]
+
+# Same as Black.
+line-length = 88
+indent-width = 4
+
+
+[tool.ruff.lint]
+select = [
+    # pycodestyle
+    "E",
+    # Pyflakes
+    "F",
+    # pyupgrade
+    "UP",
+    # isort
+    "I",
+    # pylint
+    "PL",
+]
+
+ignore = [
+    "F403", # 'from module import *' used; unable to detect undefined names
+    "PLC0415",
+    "PLR0913",
+]
+
+fixable = ["ALL"]
+
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+# this is entirely optional, you can remove this if you wish to
+[tool.ruff.format]
+# use single quotes for strings.
+quote-style = "single"
+
+# indent with spaces, rather than tabs.
+indent-style = "space"
+
+# Like Black, respect magic trailing commas.
+skip-magic-trailing-comma = false
+
+# Like Black, automatically detect the appropriate line ending.
+line-ending = "auto"
+
+[tool.setuptools]
+package-dir = { "" = "src/fabrication_utilities" }
+
+[tool.setuptools.packages.find]
+where = ["src/fabrication_utilities"]
+
+[project.entry-points.'nomad.plugin']
+
+# Apps entry point
+
+equipmentapp = "apps:equipment_app_entry_point"
+processapp = "apps:process_app_entry_point"
+removeapp = "apps:app_remove_entry_point"
+addapp = "apps:app_add_entry_point"
+transapp = "apps:app_trans_entry_point"
+materialapp = "apps:app_material_entry_point"
+
+# Schemas entry point
+
+Items_entry_point = "schema_packages:Items_entry_point"
+Utilities_entry_point = "schema_packages:Utilities_entry_point"
+#Transform_entry_point = "schema_packages:Transform_entry_point"
+Equipments_entry_point = "schema_packages:Equipments_entry_point"
+materials_entry_point = "schema_packages:materials_entry_point"
+calculus_entry_point = "schema_packages:calculus_entry_point"
+
+## Remove steps entry points
+
+dryetch_entry_point = "schema_packages.steps.remove.etching:dryetch_entry_point"
+wetetch_entry_point = "schema_packages.steps.remove.etching:wetetch_entry_point"
+strip_entry_point = "schema_packages.steps.remove.etching:strip_entry_point"
+drying_entry_point ="schema_packages.steps.remove.drying:drying_entry_point"
+develop_entry_point = "schema_packages.steps.remove.developing:develop_entry_point"
+
+## Add steps entry points
+
+cvds_entry_point = "schema_packages.steps.add.synthesis:CVDs_entry_point"
+coating_entry_point = "schema_packages.steps.add.synthesis:Coating_entry_point"
+electron_gun_entry_point = "schema_packages.steps.add.synthesis:ElectronGun_entry_point"
+sputtering_entry_point = "schema_packages.steps.add.synthesis:Sputtering_entry_point"
+sog_entry_point = "schema_packages.steps.add.synthesis:SOG_entry_point"
+bonding_entry_point = "schema_packages.steps.add.integration:Bonding_entry_point"
+
+## Transform setps entry points
+
+baking_entry_point = "schema_packages.steps.transform.thermal_process:Baking_entry_point"
+thermal_oxidation_entry_point = "schema_packages.steps.transform.thermal_process:ThermalOxidation_entry_point"
+annealing_oxidation_entry_point = "schema_packages.steps.transform.thermal_process:Annealing_entry_point"
+ebl_entry_point = "schema_packages.steps.transform.lithography:EBL_entry_point"
+fib_entry_point = "schema_packages.steps.transform.lithography:FIB_entry_point"
+labeling_entry_point = "schema_packages.steps.transform.lithography:Labeling_entry_point"
+dicing_entry_point = "schema_packages.steps.transform.dicing:Dicing_entry_point"
+
+# Example upload entry points
+
+process_entry_point = "example_uploads:process_upload_entry_point"
+
+[tool.cruft]
+# Avoid updating workflow files, this leads to permissions issues
+skip = [".github/*"]
