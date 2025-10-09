@@ -649,10 +649,10 @@ class FabricationProcessStep(FabricationProcessStepBase, EntryData):
         a_eln={'component': 'RichTextEditQuantity'},
     )
 
-    instruments = SubSection(
+    instrument = SubSection(
         section_def=EquipmentReference,
         description='Reference to the equipments used during the step',
-        repeats=True,
+        repeats=False,
     )
 
     users = SubSection(
@@ -660,8 +660,7 @@ class FabricationProcessStep(FabricationProcessStepBase, EntryData):
     )
 
     def normalize(self, archive: 'EntryArchive', logger: 'BoundLogger') -> None:
-        if self.instruments.section is not None:
-            super().normalize(archive, logger)
+        super().normalize(archive, logger)
 
 
 class FabricationOutput(ArchiveSection):

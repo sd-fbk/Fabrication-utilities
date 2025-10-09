@@ -15,7 +15,7 @@
 		"step_type":"RCA cleaning",
 		"recipe_name":"RCA cleaning",
 		"endpoint":false,
-		"instruments":[{}],
+		"instrument":{},
 		"users":[
 			{
 				"name":"User",

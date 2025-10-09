@@ -218,12 +218,12 @@ menuadd_icpcvd = Menu(
         MenuItemTerms(
             title='Name equipment used',
             type='terms',
-            search_quantity=f'data.instruments.name#{dir_path["dir1"]}',
+            search_quantity=f'data.instrument.name#{dir_path["dir1"]}',
         ),
         MenuItemTerms(
             title='ID equipment used',
             type='terms',
-            search_quantity=f'data.instruments.id#{dir_path["dir1"]}',
+            search_quantity=f'data.instrument.id#{dir_path["dir1"]}',
         ),
     ],
 )
@@ -409,12 +409,12 @@ menuadd_pecvd = Menu(
         MenuItemTerms(
             title='Name equipment used',
             type='terms',
-            search_quantity=f'data.instruments.name#{dir_path["dir27"]}',
+            search_quantity=f'data.instrument.name#{dir_path["dir27"]}',
         ),
         MenuItemTerms(
             title='ID equipment used',
             type='terms',
-            search_quantity=f'data.instruments.id#{dir_path["dir27"]}',
+            search_quantity=f'data.instrument.id#{dir_path["dir27"]}',
         ),
     ],
 )
@@ -545,12 +545,12 @@ menuadd_lpcvd = Menu(
         MenuItemTerms(
             title='Name equipment used',
             type='terms',
-            search_quantity=f'data.instruments.name#{dir_path["dir28"]}',
+            search_quantity=f'data.instrument.name#{dir_path["dir28"]}',
         ),
         MenuItemTerms(
             title='ID equipment used',
             type='terms',
-            search_quantity=f'data.instruments.id#{dir_path["dir28"]}',
+            search_quantity=f'data.instrument.id#{dir_path["dir28"]}',
         ),
     ],
 )
@@ -667,12 +667,12 @@ menuadd_spincoat = Menu(
         MenuItemTerms(
             title='Name equipment used',
             type='terms',
-            search_quantity=f'data.instruments.name#{dir_path["dir2"]}',
+            search_quantity=f'data.instrument.name#{dir_path["dir2"]}',
         ),
         MenuItemTerms(
             title='ID equipment used',
             type='terms',
-            search_quantity=f'data.instruments.id#{dir_path["dir2"]}',
+            search_quantity=f'data.instrument.id#{dir_path["dir2"]}',
         ),
     ],
 )
@@ -753,12 +753,12 @@ menuadd_bonding = Menu(
         MenuItemTerms(
             title='Name equipment used',
             type='terms',
-            search_quantity=f'data.instruments.name#{dir_path["dir8"]}',
+            search_quantity=f'data.instrument.name#{dir_path["dir8"]}',
         ),
         MenuItemTerms(
             title='ID equipment used',
             type='terms',
-            search_quantity=f'data.instruments.id#{dir_path["dir8"]}',
+            search_quantity=f'data.instrument.id#{dir_path["dir8"]}',
         ),
     ],
 )
@@ -889,12 +889,12 @@ menutrans_ebl = Menu(
         MenuItemTerms(
             title='Name equipment used',
             type='terms',
-            search_quantity=f'data.instruments.name#{dir_path["dir3"]}',
+            search_quantity=f'data.instrument.name#{dir_path["dir3"]}',
         ),
         MenuItemTerms(
             title='ID equipment used',
             type='terms',
-            search_quantity=f'data.instruments.id#{dir_path["dir3"]}',
+            search_quantity=f'data.instrument.id#{dir_path["dir3"]}',
         ),
     ],
 )
@@ -1055,12 +1055,12 @@ menutrans_fib = Menu(
         MenuItemTerms(
             title='Name equipment used',
             type='terms',
-            search_quantity=f'data.instruments.name#{dir_path["dir4"]}',
+            search_quantity=f'data.instrument.name#{dir_path["dir4"]}',
         ),
         MenuItemTerms(
             title='ID equipment used',
             type='terms',
-            search_quantity=f'data.instruments.id#{dir_path["dir4"]}',
+            search_quantity=f'data.instrument.id#{dir_path["dir4"]}',
         ),
     ],
 )
@@ -1146,12 +1146,12 @@ menuremove_resistdev = Menu(
         MenuItemTerms(
             title='Name equipment used',
             type='terms',
-            search_quantity=f'data.instruments.name#{dir_path["dir7"]}',
+            search_quantity=f'data.instrument.name#{dir_path["dir7"]}',
         ),
         MenuItemTerms(
             title='ID equipment used',
             type='terms',
-            search_quantity=f'data.instruments.id#{dir_path["dir7"]}',
+            search_quantity=f'data.instrument.id#{dir_path["dir7"]}',
         ),
     ],
 )
@@ -1383,12 +1383,12 @@ menuremove_icprie = Menu(
         MenuItemTerms(
             title='Name equipment used',
             type='terms',
-            search_quantity=f'data.instruments.name#{dir_path["dir5"]}',
+            search_quantity=f'data.instrument.name#{dir_path["dir5"]}',
         ),
         MenuItemTerms(
             title='ID equipment used',
             type='terms',
-            search_quantity=f'data.instruments.id#{dir_path["dir5"]}',
+            search_quantity=f'data.instrument.id#{dir_path["dir5"]}',
         ),
     ],
 )
@@ -1485,12 +1485,12 @@ menuremove_wetclean = Menu(
         MenuItemTerms(
             title='Name equipment used',
             type='terms',
-            search_quantity=f'data.instruments.name#{dir_path["dir6"]}',
+            search_quantity=f'data.instrument.name#{dir_path["dir6"]}',
         ),
         MenuItemTerms(
             title='ID equipment used',
             type='terms',
-            search_quantity=f'data.instruments.id#{dir_path["dir6"]}',
+            search_quantity=f'data.instrument.id#{dir_path["dir6"]}',
         ),
     ],
 )
@@ -1616,12 +1616,12 @@ menutrans_annealing = Menu(
         MenuItemTerms(
             title='Name equipment used',
             type='terms',
-            search_quantity=f'data.instruments.name#{dir_path["dir9"]}',
+            search_quantity=f'data.instrument.name#{dir_path["dir9"]}',
         ),
         MenuItemTerms(
             title='ID equipment used',
             type='terms',
-            search_quantity=f'data.instruments.id#{dir_path["dir9"]}',
+            search_quantity=f'data.instrument.id#{dir_path["dir9"]}',
         ),
     ],
 )
@@ -1692,12 +1692,12 @@ menutrans_annealing = Menu(
 #         MenuItemTerms(
 #             title='Name equipment used',
 #             type='terms',
-#             search_quantity=f'data.instruments.name#{dir_path["dir10"]}',
+#             search_quantity=f'data.instrument.name#{dir_path["dir10"]}',
 #         ),
 #         MenuItemTerms(
 #             title='ID equipment used',
 #             type='terms',
-#             search_quantity=f'data.instruments.id#{dir_path["dir10"]}',
+#             search_quantity=f'data.instrument.id#{dir_path["dir10"]}',
 #         ),
 #     ],
 # )
@@ -1803,12 +1803,12 @@ menutrans_thermaloxidation = Menu(
         MenuItemTerms(
             title='Name equipment used',
             type='terms',
-            search_quantity=f'data.instruments.name#{dir_path["dir11"]}',
+            search_quantity=f'data.instrument.name#{dir_path["dir11"]}',
         ),
         MenuItemTerms(
             title='ID equipment used',
             type='terms',
-            search_quantity=f'data.instruments.id#{dir_path["dir11"]}',
+            search_quantity=f'data.instrument.id#{dir_path["dir11"]}',
         ),
     ],
 )
@@ -1884,12 +1884,12 @@ menutrans_dicing = Menu(
         MenuItemTerms(
             title='Name equipment used',
             type='terms',
-            search_quantity=f'data.instruments.name#{dir_path["dir12"]}',
+            search_quantity=f'data.instrument.name#{dir_path["dir12"]}',
         ),
         MenuItemTerms(
             title='ID equipment used',
             type='terms',
-            search_quantity=f'data.instruments.id#{dir_path["dir12"]}',
+            search_quantity=f'data.instrument.id#{dir_path["dir12"]}',
         ),
     ],
 )
@@ -1940,12 +1940,12 @@ menutrans_dicing = Menu(
 #         MenuItemTerms(
 #             title='Name equipment used',
 #             type='terms',
-#             search_quantity=f'data.instruments.name#{dir_path["dir13"]}',
+#             search_quantity=f'data.instrument.name#{dir_path["dir13"]}',
 #         ),
 #         MenuItemTerms(
 #             title='ID equipment used',
 #             type='terms',
-#             search_quantity=f'data.instruments.id#{dir_path["dir13"]}',
+#             search_quantity=f'data.instrument.id#{dir_path["dir13"]}',
 #         ),
 #     ],
 # )
@@ -2006,12 +2006,12 @@ menutrans_labelingcleaning = Menu(
         MenuItemTerms(
             title='Name equipment used',
             type='terms',
-            search_quantity=f'data.instruments.name#{dir_path["dir14"]}',
+            search_quantity=f'data.instrument.name#{dir_path["dir14"]}',
         ),
         MenuItemTerms(
             title='ID equipment used',
             type='terms',
-            search_quantity=f'data.instruments.id#{dir_path["dir14"]}',
+            search_quantity=f'data.instrument.id#{dir_path["dir14"]}',
         ),
     ],
 )
@@ -2127,12 +2127,12 @@ menutrans_labelingcleaning = Menu(
 #         MenuItemTerms(
 #             title='Name equipment used',
 #             type='terms',
-#             search_quantity=f'data.instruments.name#{dir_path["dir15"]}',
+#             search_quantity=f'data.instrument.name#{dir_path["dir15"]}',
 #         ),
 #         MenuItemTerms(
 #             title='ID equipment used',
 #             type='terms',
-#             search_quantity=f'data.instruments.id#{dir_path["dir15"]}',
+#             search_quantity=f'data.instrument.id#{dir_path["dir15"]}',
 #         ),
 #     ],
 # )
@@ -2338,12 +2338,12 @@ menutrans_labelingcleaning = Menu(
 #         MenuItemTerms(
 #             title='Name equipment used',
 #             type='terms',
-#             search_quantity=f'data.instruments.name#{dir_path["dir16"]}',
+#             search_quantity=f'data.instrument.name#{dir_path["dir16"]}',
 #         ),
 #         MenuItemTerms(
 #             title='ID equipment used',
 #             type='terms',
-#             search_quantity=f'data.instruments.id#{dir_path["dir16"]}',
+#             search_quantity=f'data.instrument.id#{dir_path["dir16"]}',
 #         ),
 #     ],
 # )
@@ -2459,12 +2459,12 @@ menuadd_electrongun = Menu(
         MenuItemTerms(
             title='Name equipment used',
             type='terms',
-            search_quantity=f'data.instruments.name#{dir_path["dir17"]}',
+            search_quantity=f'data.instrument.name#{dir_path["dir17"]}',
         ),
         MenuItemTerms(
             title='ID equipment used',
             type='terms',
-            search_quantity=f'data.instruments.id#{dir_path["dir17"]}',
+            search_quantity=f'data.instrument.id#{dir_path["dir17"]}',
         ),
     ],
 )
@@ -2610,12 +2610,12 @@ menuadd_sputtering = Menu(
         MenuItemTerms(
             title='Name equipment used',
             type='terms',
-            search_quantity=f'data.instruments.name#{dir_path["dir18"]}',
+            search_quantity=f'data.instrument.name#{dir_path["dir18"]}',
         ),
         MenuItemTerms(
             title='ID equipment used',
             type='terms',
-            search_quantity=f'data.instruments.id#{dir_path["dir18"]}',
+            search_quantity=f'data.instrument.id#{dir_path["dir18"]}',
         ),
     ],
 )
@@ -2711,12 +2711,12 @@ menuadd_sog = Menu(
         MenuItemTerms(
             title='Name equipment used',
             type='terms',
-            search_quantity=f'data.instruments.name#{dir_path["dir19"]}',
+            search_quantity=f'data.instrument.name#{dir_path["dir19"]}',
         ),
         MenuItemTerms(
             title='ID equipment used',
             type='terms',
-            search_quantity=f'data.instruments.id#{dir_path["dir19"]}',
+            search_quantity=f'data.instrument.id#{dir_path["dir19"]}',
         ),
     ],
 )
@@ -2923,12 +2923,12 @@ menuremove_rie = Menu(
         MenuItemTerms(
             title='Name equipment used',
             type='terms',
-            search_quantity=f'data.instruments.name#{dir_path["dir20"]}',
+            search_quantity=f'data.instrument.name#{dir_path["dir20"]}',
         ),
         MenuItemTerms(
             title='ID equipment used',
             type='terms',
-            search_quantity=f'data.instruments.id#{dir_path["dir20"]}',
+            search_quantity=f'data.instrument.id#{dir_path["dir20"]}',
         ),
     ],
 )
@@ -3065,12 +3065,12 @@ menuremove_wetetching = Menu(
         MenuItemTerms(
             title='Name equipment used',
             type='terms',
-            search_quantity=f'data.instruments.name#{dir_path["dir21"]}',
+            search_quantity=f'data.instrument.name#{dir_path["dir21"]}',
         ),
         MenuItemTerms(
             title='ID equipment used',
             type='terms',
-            search_quantity=f'data.instruments.id#{dir_path["dir21"]}',
+            search_quantity=f'data.instrument.id#{dir_path["dir21"]}',
         ),
     ],
 )
@@ -3131,12 +3131,12 @@ menuremove_stripping = Menu(
         MenuItemTerms(
             title='Name equipment used',
             type='terms',
-            search_quantity=f'data.instruments.name#{dir_path["dir22"]}',
+            search_quantity=f'data.instrument.name#{dir_path["dir22"]}',
         ),
         MenuItemTerms(
             title='ID equipment used',
             type='terms',
-            search_quantity=f'data.instruments.id#{dir_path["dir22"]}',
+            search_quantity=f'data.instrument.id#{dir_path["dir22"]}',
         ),
     ],
 )
@@ -3242,12 +3242,12 @@ menuremove_spinresist = Menu(
         MenuItemTerms(
             title='Name equipment used',
             type='terms',
-            search_quantity=f'data.instruments.name#{dir_path["dir29"]}',
+            search_quantity=f'data.instrument.name#{dir_path["dir29"]}',
         ),
         MenuItemTerms(
             title='ID equipment used',
             type='terms',
-            search_quantity=f'data.instruments.id#{dir_path["dir29"]}',
+            search_quantity=f'data.instrument.id#{dir_path["dir29"]}',
         ),
     ],
 )
@@ -3373,12 +3373,12 @@ menuremove_rinsingdrying = Menu(
         MenuItemTerms(
             title='Name equipment used',
             type='terms',
-            search_quantity=f'data.instruments.name#{dir_path["dir30"]}',
+            search_quantity=f'data.instrument.name#{dir_path["dir30"]}',
         ),
         MenuItemTerms(
             title='ID equipment used',
             type='terms',
-            search_quantity=f'data.instruments.id#{dir_path["dir30"]}',
+            search_quantity=f'data.instrument.id#{dir_path["dir30"]}',
         ),
     ],
 )
@@ -3439,12 +3439,12 @@ menuutils_obsmeasurements = Menu(
         MenuItemTerms(
             title='Name equipment used',
             type='terms',
-            search_quantity=f'data.instruments.name#{dir_path["dir23"]}',
+            search_quantity=f'data.instrument.name#{dir_path["dir23"]}',
         ),
         MenuItemTerms(
             title='ID equipment used',
             type='terms',
-            search_quantity=f'data.instruments.id#{dir_path["dir23"]}',
+            search_quantity=f'data.instrument.id#{dir_path["dir23"]}',
         ),
     ],
 )
@@ -3539,12 +3539,12 @@ menuutils_startingmaterial = Menu(
         MenuItemTerms(
             title='Name equipment used',
             type='terms',
-            search_quantity=f'data.instruments.name#{dir_path["dir24"]}',
+            search_quantity=f'data.instrument.name#{dir_path["dir24"]}',
         ),
         MenuItemTerms(
             title='ID equipment used',
             type='terms',
-            search_quantity=f'data.instruments.id#{dir_path["dir24"]}',
+            search_quantity=f'data.instrument.id#{dir_path["dir24"]}',
         ),
     ],
 )
@@ -3595,12 +3595,12 @@ menutrans_baking = Menu(
         MenuItemTerms(
             title='Name equipment used',
             type='terms',
-            search_quantity=f'data.instruments.name#{dir_path["dir25"]}',
+            search_quantity=f'data.instrument.name#{dir_path["dir25"]}',
         ),
         MenuItemTerms(
             title='ID equipment used',
             type='terms',
-            search_quantity=f'data.instruments.id#{dir_path["dir25"]}',
+            search_quantity=f'data.instrument.id#{dir_path["dir25"]}',
         ),
     ],
 )
@@ -3868,12 +3868,12 @@ menuremove_driebosch = Menu(
         MenuItemTerms(
             title='Name equipment used',
             type='terms',
-            search_quantity=f'data.instruments.name#{dir_path["dir26"]}',
+            search_quantity=f'data.instrument.name#{dir_path["dir26"]}',
         ),
         MenuItemTerms(
             title='ID equipment used',
             type='terms',
-            search_quantity=f'data.instruments.id#{dir_path["dir26"]}',
+            search_quantity=f'data.instrument.id#{dir_path["dir26"]}',
         ),
     ],
 )
@@ -3960,12 +3960,12 @@ menuadd_coat = Menu(
         MenuItemTerms(
             title='Name equipment used',
             type='terms',
-            search_quantity=f'data.instruments.name#{dir_path["dir31"]}',
+            search_quantity=f'data.instrument.name#{dir_path["dir31"]}',
         ),
         MenuItemTerms(
             title='ID equipment used',
             type='terms',
-            search_quantity=f'data.instruments.id#{dir_path["dir31"]}',
+            search_quantity=f'data.instrument.id#{dir_path["dir31"]}',
         ),
     ],
 )
